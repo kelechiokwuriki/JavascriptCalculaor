@@ -1,0 +1,46 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <title>Js Calculator</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<!--        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 class="bigHead">Javascript calculator</h1>
+        <h2 class="smallHead">By Kelechi Okwuriki</h2>
+
+        <div class="containter">
+            <form>
+                <input type="text" id="display" disabled>
+                <br />
+                <input type="button" value="C" id="but" onclick='addToScreen("c")'>
+                <input type="button" value="CE" id="but" onclick='backSpace()'>
+                <input type="button" value="x^2" id="but" onclick='power()'>
+                <input type="button" value="+" id="but" onclick='addToScreen("+")'>
+                <br />
+                <input type="button" value="7" id="but" onclick='addToScreen("7")'>
+                <input type="button" value="8" id="but" onclick='addToScreen("8")'>
+                <input type="button" value="9" id="but" onclick='addToScreen("9")'>
+                <input type="button" value="-" id="but" onclick='addToScreen("-")'>
+                <br />
+                <input type="button" value="4" id="but" onclick='addToScreen("4")'>
+                <input type="button" value="5" id="but" onclick='addToScreen("5")'>
+                <input type="button" value="6" id="but" onclick='addToScreen("6")'>
+                <input type="button" value="*" id="but" onclick='addToScreen("*")'>
+                <br />
+                <input type="button" value="1" id="but" onclick='addToScreen("1")'>
+                <input type="button" value="2" id="but" onclick='addToScreen("2")'>
+                <input type="button" value="3" id="but" onclick='addToScreen("3")'>
+                <input type="button" value="/" id="but" onclick='addToScreen("/")'>
+                <br />
+                <input type="button" value="0" id="but" onclick='addToScreen("0")'>
+                <input type="button" value="." id="but" onclick='addToScreen(".")'>
+                <input type="button" value="=" id="calculate" onclick='cal()'>
+            </form>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
